@@ -5,19 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
-  <link rel="stylesheet" href="main.js">
+  <link rel="stylesheet" href="style.css">
   <title>Flames</title>
 </head>
-<body>
+<body style="text-align: center;">
     <br><br>
   <div class="paper container" style="text-align:center;">
     <h3 >🔥Flames🔥</h3>
-    <div style="border-style: solid; border: 3px; ">
-    <input id="fname" type="text" placeholder="Enter your name" style="padding: 20px; margin-left: auto; margin-right: auto;"><br>
-    <input id="pname" type="text" placeholder="Enter your Partner's name" style="padding: 20px; margin-left: auto; margin-right: auto;"><br>
-    <button id="button" >Calculate</button>
+    <div style="border-style: solid; border: 3px; margin-left:auto; margin-right:auto">
+      <label id="warning"></label>
+      <br><br>
+      <input id="fname" type="text" placeholder="Enter your name" style="padding: 20px; margin-left: auto; margin-right: auto;"><br>
+      <input id="pname" type="text" placeholder="Enter your Partner's name" style="padding: 20px; margin-left: auto; margin-right: auto;"><br>
+      <br>
+      <label id="result" style="font-size:x-large; margin-top:0px; margin-bottom:0px;"></label>
+      <br><br>
+      <button id="button" >Calculate</button>
+      <br>
     </div>
    
   </div>
+  <br>
+  <br><br>
+  <footer>
+      <label>Made by <span class="link"><a target="_blank" href='#' style="padding:3px;">@NCM</a></span> and <span class="link"><a  target="_blank" href='#' style="padding:3px;">@fillerInk</a></span></label>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>

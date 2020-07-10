@@ -1,3 +1,33 @@
+//Red this before starting
+// Simple js dom (document object manipulation) hei
+// (Also, I use js without ; its alright)
+
+//android le findElementById pole buttons and text box ivde declaring
+const fname = document.getElementById('fname')
+const pname = document.getElementById('pname')
+const button = document.getElementById('button')
+
+const result = document.getElementById('result')
+const warningLabel = document.getElementById('warning')
+
+//adding Event listener
+//Instead of click we can dblclick angane angane
+button.addEventListener('click',()=>{
+        if(fname.value == '' || pname.value == ''){
+                warningLabel.innerText='Enter valid names!'
+                result.innerText = ''
+                setTimeout(()=>{
+                        warningLabel.innerText =''
+                },1000)
+        }else{
+                result.innerHTML = `Nokkanda unni.. <span style="color:orangered;">${pname.value}</span> will never like <span style="color:orangered;">${fname.value}</span>`
+        }
+})
+
+
+
+
+
 function checnum(as)
 {
 	var dd = as.value;
