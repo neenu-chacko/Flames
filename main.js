@@ -12,17 +12,23 @@ const warningLabel = document.getElementById('warning')
 
 //adding Event listener
 //Instead of click we can dblclick angane angane
-button.addEventListener('click',()=>{
-        if(fname.value == '' || pname.value == ''){
-                warningLabel.innerText='Enter valid names!'
-                result.innerText = ''
-                setTimeout(()=>{
-                        warningLabel.innerText =''
-                },1000)
-        }else{
-                result.innerHTML = `Nokkanda unni.. <span style="color:orangered;">${pname.value}</span> will never like <span style="color:orangered;">${fname.value}</span>`
-        }
-})
+
+//button.addEventListener('click',()=>{
+        
+
+       // if(fname.value == '' || pname.value == ''){
+       //         warningLabel.innerText='Enter valid names!'
+       //         result.innerText = ''
+        //        setTimeout(()=>{
+           //             warningLabel.innerText =''
+          //      },1000)
+       // }else{
+       // calc();
+               /* result.innerHTML = `Nokkanda unni.. <span style="color:orangered;">${pname.value}</span> will never like <span style="color:orangered;">${fname.value}</span>`
+               */
+       // }
+//})
+
 
 
 
@@ -40,8 +46,10 @@ function checnum(as)
 }
 
 function calc() 
+
 {
-	var fname = document.getElementById('yname').value;
+        alert("Hello! I am an alert box!!");  
+	var fname = document.getElementById('fname').value;
 	var sname = document.getElementById('pname').value;
 	if (fname=='') {
 		alert("Enter Your Name");
@@ -53,8 +61,11 @@ function calc()
     var orfirst = document.first.name.value.toUpperCase();
     var nam=orfirst;
     orfirst = orfirst.replace(r,"");
+    
     if(orfirst!="")
+
     {
+       
 			var count = 0;
             var first = orfirst;	
             second = eval("document.first.name"+1).value.toUpperCase();
@@ -62,6 +73,7 @@ function calc()
             second = second.replace(r,"");	
             if(second != "")
             {
+               
                 document.getElementById("tablid").style.display = 'block';
                     for(var xx=0; xx<first.length; xx++)
                     {
@@ -102,43 +114,50 @@ function calc()
                             stp=g;
                             //alert(ar);
                     }
-
+                    
                     if(ar=="F")
                     {
                             //res="FRIENDS";
-							document.getElementById("msg").innerHTML = 'FRIENDS';
-							document.getElementById("msg").style.color='blue';                  
+                            alert("Hello! I am an alert box!!");
+							document.getElementById("result").innerHTML = 'FRIENDS';
+							document.getElementById("result").style.color='blue';                  
                     }
                     else if(ar=="L")
                     {
+                        alert("Hello! I am an alert box!!");
                             //res="LOVER";
-							document.getElementById("msg").innerHTML = 'LOVER';
-							document.getElementById("msg").style.color='#FF0080';
+							document.getElementById("result").innerHTML = 'LOVER';
+							document.getElementById("result").style.color='#FF0080';
                     }
                     else if(ar=="A")
                     {
+                        alert("Hello! I am an alert box!!");
                             //res="AFFECTION";
-							document.getElementById("msg").innerHTML = 'AFFECTION';
-							document.getElementById("msg").style.color='#DBA901';
+							document.getElementById("result").innerHTML = 'AFFECTION';
+							document.getElementById("result").style.color='#DBA901';
                     } 
                     else if(ar=="M")
                     {
+                        alert("Hello! I am an alert box!!");
                             //res="MARRIAGE";
-							document.getElementById("msg").innerHTML = 'MARRIAGE';
-							document.getElementById("msg").style.color='green';
+							document.getElementById("result").innerHTML = 'MARRIAGE';
+							document.getElementById("result").style.color='green';
                     }
                     else if(ar=="E")
                     {	
+                        alert("Hello! I am an alert box!!");
                             //res="ENEMY";
-							document.getElementById("msg").innerHTML = 'ENEMY';
-							document.getElementById("msg").style.color='red';
+							document.getElementById("result").innerHTML = 'ENEMY';
+							document.getElementById("result").style.color='red';
                     }
                     else if(ar=="S")
                     {
+                        alert("Hello! I am an alert box!!");
                             //res="SISTER";
-							document.getElementById("msg").innerHTML = 'SISTER';
-							document.getElementById("msg").style.color='violet';
+							document.getElementById("result").innerHTML = 'SISTER';
+							document.getElementById("result").style.color='violet';
                     }
+                    
                     document.getElementById("nam"+1).style.display = 'block';
                     document.getElementById("nam"+1).textContent=nam + " & " +names;
             }
