@@ -116,7 +116,7 @@ function calc()
                             }
                             ar.splice(g-1,1);
                             stp=g;
-                            alert(ar);
+                            //alert(ar);
                     }
                     
                     if(ar=="F")
