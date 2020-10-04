@@ -1,3 +1,37 @@
+body {
+    background: linear-gradient(276deg, #af00ff, #00c5ff, #0c006c);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 24s ease infinite;
+    animation: AnimationName 24s ease infinite;
+    margin-left: 5.85vw;
+    margin-top: 2.92vw;
+    margin-right: 3.66vw;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 20%
+    }
+    50% {
+        background-position: 100% 81%
+    }
+    100% {
+        background-position: 0% 20%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 20%
+    }
+    50% {
+        background-position: 100% 81%
+    }
+    100% {
+        background-position: 0% 20%
+    }
+}
+
 a:link{
     color:#000;
     text-decoration: none;
